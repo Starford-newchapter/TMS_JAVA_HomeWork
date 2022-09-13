@@ -39,5 +39,6 @@ public class XYVector extends  BaseVector{
                 ", y=" + y +
                 '}';
     }
+
 }
 

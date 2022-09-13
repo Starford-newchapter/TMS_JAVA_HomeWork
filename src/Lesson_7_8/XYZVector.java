@@ -1,5 +1,6 @@
 package Lesson_7_8;
 
+import java.util.Objects;
 import java.util.Random;
 
 public class XYZVector extends  BaseVector{
@@ -44,5 +45,18 @@ public class XYZVector extends  BaseVector{
                 ", y=" + y +
                 ", z=" + z +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        XYZVector xyzVector = (XYZVector) o;
+        return z == xyzVector.z;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(z);
     }
 }
