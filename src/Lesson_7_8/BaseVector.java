@@ -4,7 +4,7 @@ public abstract class BaseVector {
     protected int x;
     protected  int y;
 
-    abstract double countLengthVector();
+    abstract double getLengthVector();
 
     @Override
     public String toString() {
